@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  bot:
+    image: ghcr.io/sochotnicky/reddit-kali-bot:main
+    command: python /nokalibot.py
+    env_file:
+      - .env
